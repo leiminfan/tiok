@@ -37,7 +37,7 @@
        "value": "latest"
      }
   },
-  "website": "https://github.com/leiminfan/tiok",
-  "repository": "https://github.com/leiminfan/tiok",
+  "website": "https:",
+  "repository": "https:",
   "stack": "container"
  }
