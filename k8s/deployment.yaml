@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: njil
+  name: eedc
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: njil
+      app: eedc
   template:
     metadata:
       labels:
-        app: njil
+        app: eedc
     spec:
       containers:
-      - image: okteto.dev/njil:latest
-        name: njil
+      - image: okteto.dev/eedc:latest
+        name: eedc
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "www.crazygames.com"
         - name: Vless_UUID
-          value: "5d8675a1-8244-48f5-952c-8abeb78dba9b"
+          value: "d4037c88-6086-439f-bd9d-3d313956d3b8"
         - name: Vless_Path
           value: "/ss33"
         - name: Vmess_UUID
-          value: "5d8675a1-8244-48f5-952c-8abeb78dba9b"
+          value: "d4037c88-6086-439f-bd9d-3d313956d3b8"
         - name: Vmess_Path
           value: "/S44"
         - name: Share_Path
